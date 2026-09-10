@@ -66,5 +66,19 @@ TabHubs:CreateButton({
    end,
 })
 
+TabHubs:CreateButton({
+   Name = "Fisch", -- Nome que aparece no botão
+   Callback = function()
+      -- AQUI VOCÊ COLOCA O OUTRO LOADSTRING:
+      loadstring(game:HttpGet('loadstring(game:HttpGet('https://github.com/casanovaerickmiguel-svg/fisch/blob/main/fisch.lua'))()'))()
+      
+      Rayfield:Notify({
+         Title = "Sucesso!",
+         Content = "OnionHub carregado.",
+         Duration = 3,
+      })
+   end,
+})
+
 -- Carrega as configurações salvas
 Rayfield:LoadConfiguration()
